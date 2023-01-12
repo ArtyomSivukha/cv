@@ -1,83 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="field">
-        <div class="main_inf">
-            <div class="main_inf_first">
-                <div>
-                    <img src="1.png" alt="Ава">
-                </div>
-                <div class="lastname_spec">
-                    <div class="lastname">Артём Сивуха</div>
-                    <div class="spec">Техник-программист</div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Artyom Sivukha</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="flex-row align-center gap-1">
+        <img src="img/avatar.png" alt="Avatar" class="medium" />
+        <div>
+          <h1>Artyom Sivukha</h1>
+          <h2>Intern Software Engineer</h2>
         </div>
-        <div class="contact_inf">
-            <div class="place">
-                <div class="about">ОБО МНЕ</div>
-                <div class="about_me">Возраст — 19 лет.<p>Трудолюбивый, организованный, коммуникабельный, легко
-                        воспринимающий и усваивающий новые знания. Способен
-                        продуктивно работать как самостоятельно, так и в коллективе.</p>
-                    <p>Хотел бы попасть на данный курс, так как есть интерес, желание развиваться
-                        и, в дальнейшем, работать в этом напрвление.</p>
-                </div>
-            </div>
-            <div class="place">
-                <div class="edu">ОБРАЗОВАНИЕ</div>
-                <div class="edu_me">"программное обеспечение информационных
-                    технологий"
-                    специализация – <span>техник-программист</span>
-                    бгуир филиал "минский радиотехнический
-                    колледж"
-                    | <span>2017 - 2021</span></div>
-            </div>
-            <div class="place">
-                <div class="skills">НАВЫКИ</div>
-                <div class="skills_me">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>Windows</li>
-                        <li>Linux</li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="place">
-                <div class="links">ССЫЛКИ НА ПРОЕКТЫ</div>
-                <div class="links_me">
-                    <a href="https://github.com/ArtyomSivukha/hospital">https://github.com/ArtyomSivukha/hospital</a>
-                </div>
-            </div>
-            <div class="place">
-                <div class="contact">КОНТАКТЫ</div>
-                <div class="contact_me">
-                    <ul>
-                        <li>
-                            <img class="jpg" src="3.jpg" alt="Почта"> artyom.sivukha@gmail.com
-                        </li>
-                        <li>
-                            <img class="jpg" src="2.jpg" alt="Телефон"> +375 (33) 350-20-02
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      </header>
+      <hr />
+      <main class="grid-columns-1-3 gap-1">
+        <h3>About me</h3>
+        <p>
+          Hardworking, organized, sociable, easily perceiving and assimilating
+          new knowledge. Able to work productively both independently and in a
+          team.
+          <br />
+          <br />
+          I would like to get into this course, as there is interest, a desire
+          to develop and, in the future, work in this direction.
+        </p>
+        <h3>Education</h3>
+        <div>
+          <section class="spaced">
+            <h4>2017 — 2021</h4>
+            <p>
+              Minsk Radioengineering College
+              <span class="light-text">BSUIR</span>
+            </p>
+          </section>
+          <section class="spaced">
+            <h4>2021 — now</h4>
+            <p>
+              Belarussian State University of Informatics and Radioelectronics
+            </p>
+          </section>
         </div>
+        <h3>Skills</h3>
+        <table>
+          <tr>
+            <td class="intermediate-skill" title="Intermediate"></td>
+            <td class="skill-name">HTML</td>
+          </tr>
+          <tr>
+            <td class="intermediate-skill" title="Intermediate"></td>
+            <td class="skill-name">CSS</td>
+          </tr>
+          <tr>
+            <td class="novice-skill" title="Intermediate"></td>
+            <td class="skill-name">JS</td>
+          </tr>
+          <tr>
+            <td class="novice-skill" title="Intermediate"></td>
+            <td class="skill-name">Linux</td>
+          </tr>
+          <tr>
+            <td class="novice-skill" title="Intermediate"></td>
+            <td class="skill-name">Windows</td>
+          </tr>
+        </table>
+      </main>
+      <hr />
+      <footer class="flex-center gap-1">
+        <a href="https://github.com/ArtyomSivukha" target="_blank">
+          <svg
+            class="link-logo"
+            fill="#000000"
+            width="800px"
+            height="800px"
+            viewBox="0 0 32 32"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>github</title>
+            <path
+              d="M16 1.375c-8.282 0-14.996 6.714-14.996 14.996 0 6.585 4.245 12.18 10.148 14.195l0.106 0.031c0.75 0.141 1.025-0.322 1.025-0.721 0-0.356-0.012-1.3-0.019-2.549-4.171 0.905-5.051-2.012-5.051-2.012-0.288-0.925-0.878-1.685-1.653-2.184l-0.016-0.009c-1.358-0.93 0.105-0.911 0.105-0.911 0.987 0.139 1.814 0.718 2.289 1.53l0.008 0.015c0.554 0.995 1.6 1.657 2.801 1.657 0.576 0 1.116-0.152 1.582-0.419l-0.016 0.008c0.072-0.791 0.421-1.489 0.949-2.005l0.001-0.001c-3.33-0.375-6.831-1.665-6.831-7.41-0-0.027-0.001-0.058-0.001-0.089 0-1.521 0.587-2.905 1.547-3.938l-0.003 0.004c-0.203-0.542-0.321-1.168-0.321-1.821 0-0.777 0.166-1.516 0.465-2.182l-0.014 0.034s1.256-0.402 4.124 1.537c1.124-0.321 2.415-0.506 3.749-0.506s2.625 0.185 3.849 0.53l-0.1-0.024c2.849-1.939 4.105-1.537 4.105-1.537 0.285 0.642 0.451 1.39 0.451 2.177 0 0.642-0.11 1.258-0.313 1.83l0.012-0.038c0.953 1.032 1.538 2.416 1.538 3.937 0 0.031-0 0.061-0.001 0.091l0-0.005c0 5.761-3.505 7.029-6.842 7.398 0.632 0.647 1.022 1.532 1.022 2.509 0 0.093-0.004 0.186-0.011 0.278l0.001-0.012c0 2.007-0.019 3.619-0.019 4.106 0 0.394 0.262 0.862 1.031 0.712 6.028-2.029 10.292-7.629 10.292-14.226 0-8.272-6.706-14.977-14.977-14.977-0.006 0-0.013 0-0.019 0h0.001z"
+            ></path>
+          </svg>
+        </a>
+        <a href="tel:+375333502002" target="_blank">
+          <svg
+            class="link-logo"
+            fill="#000000"
+            width="800px"
+            height="800px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            id="phone"
+          >
+            <path
+              d="M21,15v3.93a2,2,0,0,1-2.29,2A18,18,0,0,1,3.14,5.29,2,2,0,0,1,5.13,3H9a1,1,0,0,1,1,.89,10.74,10.74,0,0,0,1,3.78,1,1,0,0,1-.42,1.26l-.86.49a1,1,0,0,0-.33,1.46,14.08,14.08,0,0,0,3.69,3.69,1,1,0,0,0,1.46-.33l.49-.86A1,1,0,0,1,16.33,13a10.74,10.74,0,0,0,3.78,1A1,1,0,0,1,21,15Z"
+            ></path>
+          </svg>
+        </a>
+        <a href="mailto:artyom.sivukha@gmail.com" target="_blank">
+          <svg
+            class="link-logo"
+            fill="#000000"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: none;
+              }
+            </style>
+            <path
+              d="M21,11c0,6.7-4.3,6.4-4.8,6.4c-0.6,0-1.1-0.1-1.6-0.4c-0.4-0.3-0.8-0.6-1-1.1c-0.4,0.5-0.8,0.9-1.3,1.1
+                c-0.5,0.3-1,0.4-1.6,0.4c-0.5,0-1-0.1-1.4-0.3c-0.4-0.2-0.8-0.6-1-1c-0.3-0.4-0.5-0.9-0.6-1.5c-0.1-0.6-0.1-1.3-0.1-2
+                c0.1-0.9,0.3-1.7,0.6-2.5c0.3-0.7,0.7-1.4,1.1-1.9c0.4-0.5,0.9-0.9,1.5-1.2c0.6-0.3,1.2-0.4,1.8-0.4c2,0,3.1,1,3.3,1.2L15.4,14
+                c0,0.4-0.2,1.8,1.1,1.8c0.4,0,2.4-0.5,2.4-4.7c0-0.1,0.9-7-6.6-7C6.3,4,5,9.9,5,12c0,8.4,5.3,8,7,8c2,0,3.1-0.4,3.3-0.5l0.4,1.8
+                C15.5,21.5,14.5,22,12,22c-3.1,0-9-0.1-9-10c0-1.4,0.8-10,9.5-10C20.8,2,21,9.6,21,11z M10.1,12.6c-0.1,0.9,0,1.7,0.2,2.2
+                c0.2,0.5,0.6,0.7,1.2,0.7c1.1,0,1.7-1.4,1.8-1.8l0.5-5.1c-0.1,0-0.7-0.1-0.9-0.1c-0.8,0-1.5,0.4-1.9,1.1
+                C10.5,10.2,10.2,11.2,10.1,12.6z"
+            />
+            <rect class="st0" width="24" height="24" />
+          </svg>
+        </a>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
